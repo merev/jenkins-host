@@ -17,7 +17,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "pipelines" do |pipelines|
     pipelines.vm.box = "merev/debian-11"
-    pipelines.vm.box_version = "2"
+    pipelines.vm.box_version = "1"
     pipelines.vm.hostname = "pipelines.prd"
     pipelines.vm.network "private_network", ip: "192.168.100.103"
     pipelines.vm.synced_folder "vagrant/", "/vagrant"
